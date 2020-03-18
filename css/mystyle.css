@@ -1,0 +1,512 @@
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 25px;
+  height: 100vh;
+  font-family: Arial;
+}
+
+/*******************************INDEX*******************************/
+.container, .container2, .faq, .admin__container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.container {
+  background-color: #94D5DE;
+}
+
+.container__item {
+  position: absolute;
+}
+
+.container__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 800px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.container__content .container__img {
+  width: 180px;
+  height: 180px;
+  margin-bottom: 30px;
+}
+
+.container__content .container__header {
+  width: 100%;
+  font-size: 35px;
+  border-radius: 20px;
+  background-color: #FAFAFA;
+  padding: 3% 0;
+  margin: 20px 0 10px 0;
+  text-align: center;
+  color: #6581CD;
+  font-weight: 600;
+}
+
+.container__content .container__btn {
+  width: 30%;
+  margin-top: 40px;
+  padding: 40px 30px 40px 30px;
+  font-size: 45px;
+  font-weight: 600;
+  color: #6581CD;
+  background-color: #FAFAFA;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+/*******************************LANGUAGES*******************************/
+.container2 {
+  background-color: #fff;
+  display: none;
+}
+
+.container2__btn-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container2__btn-content__btn {
+  width: 50%;
+  margin: 10px 0 0 10px;
+  padding: 15px 25px;
+  font-weight: 600;
+  color: #6581CD;
+  background-color: #FAFAFA;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.container2 .container2__header {
+  width: 70%;
+  font-size: 35px;
+  border-radius: 20px;
+  background-color: #FAFAFA;
+  padding: 3% 30px;
+  margin: 20px 0 10px 0;
+  text-align: center;
+  color: #6581CD;
+  font-weight: 600;
+}
+
+/***Circle positioning***/
+.container__item1 {
+  top: -20%;
+  right: -25%;
+}
+
+.container__item2 {
+  top: -30%;
+  right: -5%;
+  width: 30%;
+}
+
+.container__item3 {
+  bottom: -20%;
+  left: 5%;
+  z-index: 98;
+}
+
+.container__item4 {
+  bottom: -25%;
+  left: -10%;
+}
+
+/*******************************USER-MAIN*******************************/
+.menu {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  overflow: hidden;
+  position: relative;
+}
+
+.menu .container__prev-arrow {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.menu__btn-content {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.menu__btn-content__btn {
+  padding: 3% 0;
+  margin: 40px 0 0 0;
+  font-weight: 600;
+  color: #6581CD;
+  background-color: #FAFAFA;
+  border: none;
+  border-radius: 20px;
+  font-size: 20px;
+  cursor: pointer;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-shadow: 4px 8px 6px #00000021;
+          box-shadow: 4px 8px 6px #00000021;
+}
+
+.menu__btn-content .btn2, .menu__btn-content .btn3 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 100%;
+          flex: 0 1 100%;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+.menu__btn-content .btn1 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+.menu__btn-content .btn1 {
+  margin-left: 15px;
+}
+
+.menu__btn-content .btn3 {
+  margin: 15px 0 0 0;
+}
+
+.menu__btn-content i {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 35px;
+}
+
+.menu .menu__header {
+  width: 100%;
+  font-size: 35px;
+  border-radius: 20px;
+  background-color: #FAFAFA;
+  padding: 3% 0;
+  margin: 20px 0 10px 0;
+  text-align: center;
+  color: #6581CD;
+  font-weight: 600;
+}
+
+/*******************************FAQ*******************************/
+.faq {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.faq__prev-arrow {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.faq__questions {
+  background-color: #94D5DE;
+  width: 35%;
+  height: 100%;
+  -webkit-box-shadow: 6px 2px 14px -4px rgba(0, 0, 0, 0.75);
+  box-shadow: 6px 2px 14px -4px rgba(0, 0, 0, 0.75);
+  z-index: 99;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.faq__questions .container__img {
+  width: 180px;
+  height: 180px;
+  margin-bottom: 15px;
+}
+
+.faq__questions .container__header {
+  width: 75%;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 30px 2.5%;
+  text-align: center;
+  border-radius: 15px;
+}
+
+.faq__answers {
+  width: 65%;
+  height: 100%;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.faq__answers_el {
+  width: 50%;
+  padding: 20px;
+  background-color: #FAFAFA;
+  margin: 15px 0;
+  border-radius: 20px;
+  text-align: center;
+  cursor: pointer;
+  -webkit-box-shadow: 4px 8px 6px #00000021;
+          box-shadow: 4px 8px 6px #00000021;
+}
+
+.faq__answers_text {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+  right: -100%;
+  padding-left: -0%;
+  overflow-y: scroll;
+  padding-bottom: 50px;
+}
+
+.faq__answers_text .faq__answers_close {
+  font-size: 50px;
+  margin: 30px 10px 0 30px;
+  float: right;
+  cursor: pointer;
+  color: #E37B7B;
+}
+
+.faq__answers_text .faq__answers_text-content {
+  clear: both;
+  max-width: 75%;
+  margin: 15px auto 0 auto;
+}
+
+.faq__answers_text .faq__answers_text-content h2 {
+  font-size: 35px;
+  margin: 15px 0;
+  color: #6581CD;
+}
+
+.faq__answers_text .faq__answers_text-content ul {
+  margin: 20px 0 20px 25px;
+  color: #262626;
+  font-size: 20px;
+}
+
+.faq__answers_text .faq__answers_text-content p {
+  color: #262626;
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.faq__answers_text .faq__answers_text-content a {
+  color: #E37B7B;
+}
+
+/*******************************CALENDAR*******************************/
+.calendar__container {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+}
+
+.calendar__container__item {
+  position: absolute;
+}
+
+.calendar__container__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 1000px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.calendar__container__content__img {
+  width: 80px;
+  height: 80px;
+  margin: -16% -30%;
+  position: absolute;
+}
+
+.calendar__container__content__header {
+  width: 70%;
+  font-size: 20px;
+  border-radius: 20px;
+  background-color: #FAFAFA;
+  padding: 3% 0;
+  margin: 20px 0 10px 0;
+  text-align: center;
+  color: #6581CD;
+  font-weight: 600;
+  margin: 0 0 5% 30%;
+}
+
+.calendar__container__content__days {
+  width: 10%;
+  height: 100%;
+  max-height: 100%;
+  display: -ms-inline-grid;
+  display: inline-grid;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+  margin-left: -20%;
+  font-size: 20px;
+}
+
+.calendar__container__content__table {
+  width: 140%;
+  height: 60%;
+  background-color: #FAFAFA;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.calendar__container__content__table__grid {
+  width: 85%;
+  height: 100%;
+  max-height: 100%;
+  display: -ms-inline-grid;
+  display: inline-grid;
+  -ms-grid-columns: auto auto auto auto auto auto auto auto auto auto auto auto;
+      grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto;
+  margin-right: -20%;
+}
+
+.calendar__container__content__table__grid .calendar__container__content__table__grid__element1, .calendar__container__content__table__grid .calendar__container__content__table__grid__element2, .calendar__container__content__table__grid .calendar__container__content__table__grid__element3, .calendar__container__content__table__grid .calendar__container__content__table__grid__element6, .calendar__container__content__table__grid .calendar__container__content__table__grid__element7, .calendar__container__content__table__grid .calendar__container__content__table__grid__element8, .calendar__container__content__table__grid .calendar__container__content__table__grid__element9, .calendar__container__content__table__grid .calendar__container__content__table__grid__element11, .calendar__container__content__table__grid .calendar__container__content__table__grid__element12, .calendar__container__content__table__grid .calendar__container__content__table__grid__element13, .calendar__container__content__table__grid .calendar__container__content__table__grid__element14, .calendar__container__content__table__grid .calendar__container__content__table__grid__element16, .calendar__container__content__table__grid .calendar__container__content__table__grid__element17, .calendar__container__content__table__grid .calendar__container__content__table__grid__element18, .calendar__container__content__table__grid .calendar__container__content__table__grid__element19, .calendar__container__content__table__grid .calendar__container__content__table__grid__element20, .calendar__container__content__table__grid .calendar__container__content__table__grid__element21, .calendar__container__content__table__grid .calendar__container__content__table__grid__element22, .calendar__container__content__table__grid .calendar__container__content__table__grid__element23, .calendar__container__content__table__grid .calendar__container__content__table__grid__element24, .calendar__container__content__table__grid .calendar__container__content__table__grid__element25, .calendar__container__content__table__grid .calendar__container__content__table__grid__element27, .calendar__container__content__table__grid .calendar__container__content__table__grid__element28, .calendar__container__content__table__grid .calendar__container__content__table__grid__element29, .calendar__container__content__table__grid .calendar__container__content__table__grid__element30, .calendar__container__content__table__grid .calendar__container__content__table__grid__element31, .calendar__container__content__table__grid .calendar__container__content__table__grid__element33 {
+  background-color: #93BF71;
+  width: 85%;
+  height: 20%;
+  border-radius: 20px;
+  margin: 40% 3%;
+  padding: 13% 2% 0 2%;
+  font-size: 12px;
+}
+
+.calendar__container__content__table__grid .calendar__container__content__table__grid__element4, .calendar__container__content__table__grid .calendar__container__content__table__grid__element5, .calendar__container__content__table__grid .calendar__container__content__table__grid__element10, .calendar__container__content__table__grid .calendar__container__content__table__grid__element15, .calendar__container__content__table__grid .calendar__container__content__table__grid__element26, .calendar__container__content__table__grid .calendar__container__content__table__grid__element32 {
+  background-color: #E37B7B;
+  height: 20%;
+  border-radius: 20px;
+  margin: 40% 3%;
+  padding: 13% 2% 0 2%;
+  font-size: 12px;
+  width: 85%;
+}
+
+/*******************************ADMIN PANEL*******************************/
+.admin__container {
+  background-color: #94D5DE;
+}
+
+.admin__container__item {
+  position: absolute;
+}
+
+.admin__container .container__content__img {
+  width: 180px;
+  height: 180px;
+  margin-bottom: 30px;
+}
+
+.admin__container .container__content .container__btn {
+  width: 20%;
+  height: 10%;
+  padding: 20px;
+  font-size: 35px;
+  font-weight: 600;
+  color: #6581CD;
+  background-color: #fff;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.admin__container .container__content .container__roundbox {
+  border-radius: 25px;
+  border: none;
+  -webkit-box-shadow: 4px 8px 6px #00000021;
+          box-shadow: 4px 8px 6px #00000021;
+  background-color: #fff;
+  color: #6581CD;
+  padding: 20px;
+  width: 35%;
+  height: 2%;
+  margin-top: 25px;
+  font-size: 30px;
+  font-weight: 600;
+  padding: 30px;
+}
+/*# sourceMappingURL=mystyle.css.map */

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="182.628" height="121.751" viewBox="0 0 182.628 121.751">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #d80027;
+      }
+
+      .cls-2 {
+        fill: #fafafa;
+      }
+    </style>
+  </defs>
+  <g id="denmark" transform="translate(6.311 -81.123)">
+    <path id="Path_65" data-name="Path 65" class="cls-1" d="M0,0H170.007V113.339H0Z" transform="translate(0 85.331)"/>
+    <path id="Path_54" data-name="Path 54" class="cls-2" d="M68.485,85.33H45.657v49.461H0V157.62H45.657v49.461H68.485V157.62H182.628V134.791H68.485Z" transform="translate(-6.311 -4.207)"/>
+  </g>
+</svg>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="Siusiaki!">
+	<meta name="description" content="Example description">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="css/mystyle.css">
+	<link rel="icon" type="image/x-icon" href=""/>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+	<title>Study Counseling | Business Academy Aarhus</title>
+</head>
+
+<body>
+	<div class="container">
+		<img src="images/bluecircle.svg" class="container__item container__item1" alt="blueCircle">
+		<img src="images/orangecircle.svg" class="container__item container__item2" alt="orangeCircle">
+		<img src="images/orangecircle.svg" class="container__item container__item3" alt="orangeCircle">
+		<img src="images/turquoisecircle.svg" class="container__item container__item4" alt="turquoiseCircle">
+		<div class="container__content">
+			<img src="images/avatarorange.svg" class="container__img" alt="avatar">
+			<header class="container__header">
+				<p>TEST BLAH BLAH</p>
+			</header>
+			<button class="container__btn" id="btn-start">NEXT</button>
+		</div>
+	</div>
+	<div class="container2">
+		<img src="images/bluecircle.svg" class="container__item container__item1" alt="blueCircle">
+		<img src="images/orangecircle.svg" class="container__item container__item2" alt="orangeCircle">
+		<img src="images/orangecircle.svg" class="container__item container__item3" alt="orangeCircle">
+		<img src="images/turquoisecircle.svg" class="container__item container__item4" alt="turquoiseCircle">
+		<div class="container__content">
+			<img src="images/avatarorange.svg" class="container__img" alt="avatar">
+			<header class="container2__header">
+				<p>Choose your language</p>
+			</header>
+			<div class="container2__btn-content">
+				<button class="container2__btn-content__btn" id="danish-btn"><img src="images/dk.svg" alt="danish flag"></button>
+				<button class="container2__btn-content__btn" id="british-btn" onclick="location.href='new/newuser.html'"><img src="images/uk.svg" alt="british flag"></button>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src=""></script>
+	<script>
+		$(document).ready(function(){
+			$("#btn-start").click(function(){
+				console.log("add style");
+				$(".container").css({
+					"display":"none"
+				});
+				$(".container2").css({
+					"display":"block"
+				});
+			});
+		});
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,565 @@
+$turquoise : #94D5DE;
+$red: #E37B7B;
+$green: #93BF71;
+$orange: #FFB275;
+$blue: #6581CD;
+$dark: #262626;
+$grey: #FAFAFA;
+$white: #fff;
+
+*,
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-size: 25px;
+    height: 100vh;
+    font-family: Arial;
+
+}
+/*******************************INDEX*******************************/
+%mainContainer {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.container{
+    @extend %mainContainer;
+    background-color: $turquoise;
+
+    &__item{
+        position: absolute;
+    }
+    &__content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        max-width: 800px;
+        height: 100%;
+        margin: 0 auto;
+
+        .container__img{
+            width: 180px;
+            height: 180px;
+            margin-bottom: 30px;
+        }
+
+        .container__header{
+            width: 100%;
+            font-size: 35px;
+            border-radius: 20px;
+            background-color: $grey;
+            padding: 3% 0;
+            margin: 20px 0 10px 0;
+            text-align: center;
+            color: $blue;
+            font-weight: 600;
+        }
+
+        .container__btn{
+            width: 30%;
+            margin-top: 40px;
+            padding: 40px 30px 40px 30px;
+            font-size: 45px;
+            font-weight: 600;
+            color: $blue;
+            background-color: $grey;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+
+        }
+    }
+}
+
+/*******************************LANGUAGES*******************************/
+.container2{
+    @extend %mainContainer;
+    background-color: $white;
+    display:none;
+
+    &__btn-content{
+        display: flex;
+
+        &__btn{
+            width: 50%;
+            margin:10px 0 0 10px;
+            padding: 15px 25px;
+            font-weight: 600;
+            color: $blue;
+            background-color: $grey;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+    }
+
+    .container2__header{
+            width: 70%;
+            font-size: 35px;
+            border-radius: 20px;
+            background-color: $grey;
+            padding: 3% 30px;
+            margin: 20px 0 10px 0;
+            text-align: center;
+            color: $blue;
+            font-weight: 600;
+    }
+}
+
+/***Circle positioning***/
+.container__item1{
+    top: -20%;
+    right: -25%;
+}
+.container__item2{
+    top: -30%;
+    right: -5%;
+    width: 30%;
+}
+
+.container__item3{
+    bottom: -20%;
+    left: 5%;
+    z-index:98;
+}
+
+.container__item4{
+    bottom: -25%;
+    left: -10%;
+}
+
+
+/*******************************USER-MAIN*******************************/
+.menu{
+    width: 100%;
+    height: 100%;
+    background-color: $white;
+    overflow: hidden;
+    position: relative;
+
+    .container__prev-arrow{
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        width: 25px;
+        height: 25px;
+        cursor: pointer;
+    }
+
+    &__btn-content{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        
+        &__btn{
+            padding: 3% 0;
+            margin:40px 0 0 0;
+            font-weight: 600;
+            color: $blue;
+            background-color: $grey;
+            border: none;
+            border-radius: 20px;
+            font-size: 20px;
+            cursor: pointer;
+            flex:1;
+            box-shadow: 4px 8px 6px #00000021;
+
+        }
+
+        .btn2, .btn3{
+            flex: 0 1 100%;
+            order:2;
+        }
+
+        .btn1{
+            flex: 0 1 50%;
+            order: 1;
+        }
+
+        .btn1{
+            margin-left: 15px;
+        }
+
+        .btn3{
+            margin: 15px 0 0 0;
+        }
+        
+        i{
+            display: block;
+            margin-bottom: 5px;
+            font-size: 35px;
+        }
+    }
+
+
+    .menu__header{
+        width: 100%;
+        font-size: 35px;
+        border-radius: 20px;
+        background-color: $grey;
+        padding: 3% 0;
+        margin: 20px 0 10px 0;
+        text-align: center;
+        color: $blue;
+        font-weight: 600;
+    }
+}
+
+/*******************************FAQ*******************************/
+
+.faq{
+    @extend %mainContainer;
+    display: flex;
+
+    &__prev-arrow{
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        width: 25px;
+        height: 25px;
+        cursor: pointer;
+        z-index: 100;
+    }
+
+    &__questions{
+        background-color: $turquoise;
+        width: 35%;
+        height: 100%;
+        -webkit-box-shadow: 6px 2px 14px -4px rgba(0,0,0,0.75);
+-moz-box-shadow: 6px 2px 14px -4px rgba(0,0,0,0.75);
+box-shadow: 6px 2px 14px -4px rgba(0,0,0,0.75);
+        z-index:99;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .container__img{
+            width: 180px;
+            height: 180px;
+            
+            margin-bottom: 15px;
+        }
+
+        .container__header{
+            width: 75%;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 30px 2.5%;
+            text-align: center;
+            border-radius: 15px;
+        }
+    }
+
+    &__answers{
+        width: 65%;
+        height: 100%;
+        background-color: $white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+        &_el{
+            width: 50%;
+            padding: 20px;
+            background-color: $grey;
+            margin: 15px 0;
+            border-radius: 20px;
+            text-align: center;
+            cursor: pointer;
+            box-shadow: 4px 8px 6px #00000021;
+        }
+
+        &_text{
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            background-color: $white;
+            right: -100%;
+            padding-left: -0%;
+            overflow-y: scroll;
+            padding-bottom: 50px;
+
+            .faq__answers_close{
+                font-size: 50px;
+                margin: 30px 10px 0 30px;
+                float: right;
+                cursor: pointer;
+                color: $red;
+            }
+            .faq__answers_text-content{
+                clear: both;
+                max-width: 75%;
+                margin: 15px auto 0 auto;
+
+                h2{
+                    font-size: 35px;
+                    margin: 15px 0;
+                    color: $blue;
+                }
+
+                ul{
+                    margin: 20px 0 20px 25px;
+                    color: $dark;
+                    font-size: 20px;
+                }
+
+                p{
+                    color: $dark;
+                    font-size: 20px;
+                    margin: 10px 0;
+                }
+
+                a{
+                    color: $red;
+                }
+            }
+        }
+    }
+}
+
+/*******************************CALENDAR*******************************/
+
+.calendar__container{
+    width: 100%;
+    height: 100%;
+    background-color: $white;
+    &__item{
+        position: absolute;
+    }
+
+    &__content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        max-width: 1000px;
+        height: 100%;
+        margin: 0 auto;
+
+        &__img{
+            width: 80px;
+            height: 80px;
+            margin: -16% -30% ;
+            position: absolute;
+        }
+
+        &__header{
+            width: 70%;
+            font-size: 20px;
+            border-radius: 20px;
+            background-color: $grey;
+            padding: 3% 0;
+            margin: 20px 0 10px 0;
+            text-align: center;
+            color: $blue;
+            font-weight: 600;
+            margin: 0 0 5% 30%;
+        }
+        &__days{
+                width: 10%;
+                height: 100%;
+                max-height: 100%;
+                display: inline-grid;
+                grid-template-columns: auto;
+                margin-left: -20%;
+                font-size: 20px;
+        }
+
+        &__table{
+            width: 140%;
+            height: 60%;
+            background-color: $grey;
+            border-radius: 20px;
+            text-align: center;
+            
+            
+
+            &__grid{
+                width: 85%;
+                height: 100%;
+                max-height: 100%;
+                display: inline-grid;
+                grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto;
+                margin-right: -20%;
+
+                %green_elements{
+                    background-color: $green;
+                    width: 85%;
+                    height: 20%;
+                    border-radius: 20px;
+                    margin: 40% 3%;
+                    padding: 13% 2% 0 2%;
+                    font-size: 12px;
+                }
+
+                %red_elements{
+                    background-color: $red;
+                    height: 20%;
+                    border-radius: 20px;
+                    margin:40% 3%;
+                    padding: 13% 2% 0 2%;
+                    font-size: 12px;
+                    width: 85%;
+                }
+
+                &__element1{
+                    @extend %green_elements;
+                }
+                &__element2{
+                    @extend %green_elements;
+                }
+                &__element3{
+                    @extend %green_elements;
+                }
+                &__element4{
+                    @extend %red_elements;
+                }
+                &__element5{
+                    @extend %red_elements;
+                }
+                &__element6{
+                    @extend %green_elements;
+                }
+                &__element7{
+                    @extend %green_elements;
+                }
+                &__element8{
+                    @extend %green_elements;
+                }
+                &__element9{
+                    @extend %green_elements;
+                }
+                &__element10{
+                    @extend %red_elements;
+                }
+                &__element11{
+                    @extend %green_elements;
+                }
+                &__element12{
+                    @extend %green_elements;
+                }
+                &__element13{
+                    @extend %green_elements;
+                }
+                &__element14{
+                    @extend %green_elements;
+                }
+                &__element15{
+                    @extend %red_elements;
+                }
+                &__element16{
+                    @extend %green_elements;
+                }
+                &__element17{
+                    @extend %green_elements;
+                }
+                &__element18{
+                    @extend %green_elements;
+                }
+                &__element19{
+                    @extend %green_elements;
+                }
+                &__element20{
+                    @extend %green_elements;
+                }
+                &__element21{
+                    @extend %green_elements;
+                }
+                &__element22{
+                    @extend %green_elements;
+                }
+                &__element23{
+                    @extend %green_elements;
+                }
+                &__element24{
+                    @extend %green_elements;
+                }
+                &__element25{
+                    @extend %green_elements;
+                }
+                &__element26{
+                    @extend %red_elements;
+                }
+                &__element27{
+                    @extend %green_elements;
+                }
+                &__element28{
+                    @extend %green_elements;
+                }
+                &__element29{
+                    @extend %green_elements;
+                }
+                &__element30{
+                    @extend %green_elements;
+                }
+                &__element31{
+                    @extend %green_elements;
+                }
+                &__element32{
+                    @extend %red_elements;
+                }
+                &__element33{
+                    @extend %green_elements;
+                }
+                
+
+            }
+        }
+    }
+}
+
+/*******************************ADMIN PANEL*******************************/
+.admin__container{
+    @extend %mainContainer;
+    background-color: $turquoise;
+
+    &__item {
+        position: absolute;
+    }
+
+    .container__content{
+        &__img{
+            width: 180px;
+            height: 180px;
+            margin-bottom: 30px;
+        }
+        .container__btn{
+            width: 20%;
+            height: 10%;
+            padding: 20px;
+            font-size: 35px;
+            font-weight: 600;
+            color: $blue;
+            background-color: $white;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer; 
+        }
+        .container__roundbox{
+            border-radius: 25px;
+            border: none;
+            box-shadow: 4px 8px 6px #00000021;
+            background-color: $white;
+            color: $blue;
+            padding: 20px;
+            width: 35%;
+            height: 2%;
+            margin-top: 25px;
+            font-size: 30px;
+            font-weight: 600;
+            padding: 30px;
+        }
+    }
+    }
+
